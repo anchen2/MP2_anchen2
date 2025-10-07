@@ -1,0 +1,6 @@
+timestamp,user_id,session_id,input_text,model_response,model_name,tokens_in,tokens_out,latency_ms,success
+2025-10-07 14:50:01,abigail,sess_githelp,why is git ignoring my build folder?,"Ah! That message is coming from Git ignoring the build/ folder because create-react-app automatically adds it to .gitignore. Git is warning you that build/ is listed in .gitignore, so it won’t be added unless you force it.",gpt-5,12,74,412,True
+2025-10-07 14:50:18,abigail,sess_githelp,how do i fix it,"Two ways to handle this: Option 1 – Force add the build folder (git add -f build/ ...), or Option 2 – Use GitHub Actions to build & deploy automatically.",gpt-5,5,53,386,True
+2025-10-07 14:50:36,abigail,sess_githelp,what does the -f flag do,"The -f (or --force) flag overrides .gitignore for this commit, letting Git include files that are normally ignored.",gpt-5,7,22,205,True
+2025-10-07 14:50:58,abigail,sess_githelp,which option is better,"For most React projects, Option 2 (GitHub Actions build & deploy) is preferred — it keeps your repo clean and automated.",gpt-5,6,29,244,True
+2025-10-07 14:51:22,abigail,sess_githelp,can you make that workflow file,Sure! I can create a ready-to-use GitHub Actions workflow that builds and deploys your React app automatically.,gpt-5,8,23,275,True
