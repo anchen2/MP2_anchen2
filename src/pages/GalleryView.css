@@ -1,0 +1,105 @@
+.pokemon-grid1 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    grid-row: auto;
+    grid-column: auto;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.pokemon-card1, .pokemon-image-placeholder1{
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 76, 162, 0.625);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+.pokemon-image1 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemon-image-placeholder1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    color: #888;
+    font-size: 14px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card1:hover {
+  background-color: rgba(255, 76, 162, 0.8);
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  .pokemon-image1 {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.2s;
+    animation: pokemon-image-spin1 2s linear infinite;
+  }
+  .pokemon-image-placeholder1 {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.2s;
+    animation: pokemon-image-spin1 2s linear infinite;
+  }
+}
+
+@keyframes pokemon-image-spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-grid1 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+
+@media screen  and (min-width: 1000px) {
+    .pokemon-grid1 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+}
+
+button {
+  background-color: #ff4ca2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #e0438f;
+}

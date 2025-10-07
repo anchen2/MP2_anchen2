@@ -1,0 +1,135 @@
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-title {
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+}
+
+.pokemon-search, .pokemon-filter {
+  text-align: center;
+  margin: 1vh auto;
+  width: 40vw;
+  height: 4vh;
+  border-radius: 20px;
+  border: 0px;
+  font-size: 0.75rem;
+  color: grey;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.pokemon-filter {
+  margin-bottom: 3vh;
+
+}
+
+.pokemon-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-card {
+  background-color: rgba(255, 76, 162, 0.625);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 40vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-card:hover {
+  background-color: rgba(255, 76, 162, 0.8);
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  .pokemon-image {
+    width: 15vw;
+    transition: transform 0.2s;
+    animation: pokemon-image-spin 2s linear infinite;
+  }
+  .pokemon-name {
+    font-size: 2rem;
+    transition: font-size 0.2s;
+  }
+  .pokemon-image-placeholder {
+    width: 15vw;
+    height: 15vw;
+    transition: transform 0.2s;
+    animation: pokemon-image-spin 2s linear infinite;
+  }
+}
+
+.pokemon-image {
+  width: 10vw;
+}
+
+.pokemon-name {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: rgb(73, 0, 53);
+  text-align: center;
+}
+
+.pokemon-image-placeholder {
+  width: 10vw;
+  height: 10vw;
+  background-color: pink;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes pokemon-image-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+  color:rgb(73, 0, 53) ;
+}
+
+.checkbox-container  input[type="checkbox"] {
+    width: 2vh;
+    height: 2vh;
+    border-radius: 20px;
+  }
