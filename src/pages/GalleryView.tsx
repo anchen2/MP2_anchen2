@@ -14,7 +14,7 @@ function GalleryView() {
   const [search] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
   const [types, setTypes] = useState<string[]>([]);
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [sortOrder] = useState<"asc" | "desc">("asc");
 
 
   useEffect(() => {
