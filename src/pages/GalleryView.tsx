@@ -11,7 +11,7 @@ interface PokemonWithSprite extends Pokemon {
 
 function GalleryView() {
   const [pokemonList, setPokemonList] = useState<PokemonWithSprite[]>([]);
-  const [search, setSearch] = useState("");
+  const [search] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
   const [types, setTypes] = useState<string[]>([]);
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
@@ -58,9 +58,9 @@ function GalleryView() {
       return b.name.localeCompare(a.name);
     });
 
-  const handleSortChange = (order: "asc" | "desc") => {
-    setSortOrder(order);
-  };
+  // const handleSortChange = (order: "asc" | "desc") => {
+  //   setSortOrder(order);
+  // };
 
 
 

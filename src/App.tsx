@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ListView from './pages/ListView';
 import GalleryView from './pages/GalleryView';
 import DetailView from './pages/DetailView';  
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
